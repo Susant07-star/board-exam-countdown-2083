@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 12 Board Exam 2083 Countdown</title>
+    <meta name="description" content="Live countdown to Nepal Class 12 Board Exams 2083. Let's do this! 💪">
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome for small icons (optional but nice) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Canvas for particle background -->
+    <canvas id="stars-canvas"></canvas>
+
+    <!-- Full screen flicker effect overlay -->
+    <div class="flicker-overlay" id="flicker"></div>
+
+    <div class="wrapper">
+        <div class="top-badge">NEB Exams 2083</div>
+        
+        <h1 class="main-title">Class 12 <span class="year-highlight">Board Exam</span><br>Countdown</h1>
+        
+        <div class="subtitle-wrap">
+            <h2 class="subtitle" id="rotating-text">Final battle begins...</h2>
+        </div>
+
+        <div class="countdown-grid" id="countdown-container">
+            <div class="time-block days">
+                <span class="time-num" id="days">00</span>
+                <span class="time-label">Days</span>
+            </div>
+            <div class="time-block hours">
+                <span class="time-num" id="hours">00</span>
+                <span class="time-label">Hours</span>
+            </div>
+            <div class="time-block minutes">
+                <span class="time-num" id="minutes">00</span>
+                <span class="time-label">Mins</span>
+            </div>
+            <div class="time-block seconds">
+                <span class="time-num" id="seconds">00</span>
+                <span class="time-label">Secs</span>
+            </div>
+        </div>
+
+        <div class="progress-section">
+            <div class="progress-label">
+                <span>Time Elapsed</span>
+                <span id="progress-percent">0%</span>
+            </div>
+            <div class="progress-bar-wrap">
+                <div class="progress-bar-fill" id="progress-bar"></div>
+            </div>
+        </div>
+
+        <div class="motive-card">
+            "Push yourself, because no one else is going to do it for you."<br>
+            <strong>Only a few hours left. Make them count.</strong>
+        </div>
+
+        <div class="info-row">
+            <div class="info-pill">
+                <i class="fa-solid fa-calendar icon"></i>
+                <span>April 27, 2026</span>
+            </div>
+            <div class="info-pill">
+                <i class="fa-regular fa-clock icon"></i>
+                <span>8:00 AM (NPT)</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Made for students • 2083<br>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Source Code</a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
