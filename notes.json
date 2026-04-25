@@ -1,0 +1,35 @@
+{
+  "subjects": [
+    {
+      "name": "Chemistry",
+      "files": []
+    },
+    {
+      "name": "Computer",
+      "files": []
+    },
+    {
+      "name": "English",
+      "files": []
+    },
+    {
+      "name": "Maths",
+      "files": []
+    },
+    {
+      "name": "Nepali",
+      "files": []
+    },
+    {
+      "name": "Physics",
+      "files": [
+        {
+          "name": "dummy-physics-notes",
+          "filename": "dummy-physics-notes.pdf",
+          "path": "notes/Physics/dummy-physics-notes.pdf",
+          "size": 40
+        }
+      ]
+    }
+  ]
+}

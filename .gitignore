@@ -13,3 +13,6 @@ npm-debug.log
 
 # Gemini / AI tools
 .gemini/
+
+# Build artifacts
+dist/

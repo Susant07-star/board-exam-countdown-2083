@@ -130,7 +130,7 @@ body {
 /* ============ COUNTDOWN GRID ============ */
 .countdown-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   width: 100%;
   margin: 0.5rem 0;
@@ -166,13 +166,10 @@ body {
   box-shadow: 0 8px 30px rgba(0, 212, 255, 0.1), inset 0 1px 0 rgba(255,255,255,0.05);
 }
 
-/* Individual colors */
-.time-block.days { border-color: rgba(168, 85, 247, 0.3); }
-.time-block.days:hover { border-color: rgba(168, 85, 247, 0.6); box-shadow: 0 8px 30px rgba(168, 85, 247, 0.15); }
-.time-block.days .time-num { color: #c084fc; text-shadow: 0 0 30px rgba(168, 85, 247, 0.8); }
-
-.time-block.hours .time-num { color: var(--blue-glow); text-shadow: 0 0 30px rgba(0, 212, 255, 0.8); }
-.time-block.minutes .time-num { color: #34d399; text-shadow: 0 0 30px rgba(52, 211, 153, 0.8); }
+/* Individual block colors */
+.time-block.hours .time-num   { color: #c084fc; text-shadow: 0 0 30px rgba(168, 85, 247, 0.8); }
+.time-block.hours:hover       { border-color: rgba(168, 85, 247, 0.6); box-shadow: 0 8px 30px rgba(168, 85, 247, 0.15); }
+.time-block.minutes .time-num { color: var(--blue-glow); text-shadow: 0 0 30px rgba(0, 212, 255, 0.8); }
 .time-block.seconds .time-num { color: var(--pink-accent); text-shadow: 0 0 30px rgba(244, 114, 182, 0.8); }
 
 .time-num {
@@ -301,6 +298,58 @@ body {
   font-size: 0.9rem;
 }
 
+/* ============ ACTION BUTTONS ============ */
+.action-row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(168, 85, 247, 0.15));
+  border: 1px solid rgba(0, 212, 255, 0.4);
+  border-radius: 50px;
+  padding: 0.7rem 1.5rem;
+  color: var(--blue-glow);
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.1);
+  -webkit-app-region: no-drag;
+}
+
+.action-btn:hover {
+  background: linear-gradient(135deg, rgba(0, 212, 255, 0.2), rgba(168, 85, 247, 0.3));
+  border-color: rgba(0, 212, 255, 0.8);
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 25px rgba(0, 212, 255, 0.3);
+}
+
+.promo-btn {
+  background: linear-gradient(135deg, rgba(244, 114, 182, 0.15), rgba(168, 85, 247, 0.2));
+  border-color: rgba(244, 114, 182, 0.5);
+  color: var(--pink-accent);
+  box-shadow: 0 0 15px rgba(244, 114, 182, 0.15);
+}
+
+.promo-btn:hover {
+  background: linear-gradient(135deg, rgba(244, 114, 182, 0.3), rgba(168, 85, 247, 0.4));
+  border-color: var(--pink-accent);
+  box-shadow: 0 5px 25px rgba(244, 114, 182, 0.4);
+}
+
 /* ============ FOOTER ============ */
 footer {
   margin-top: auto;
@@ -358,7 +407,7 @@ body::after {
 /* ============ RESPONSIVE ============ */
 @media (max-width: 600px) {
   .countdown-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 0.75rem;
   }
 

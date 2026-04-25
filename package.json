@@ -1,0 +1,39 @@
+{
+  "name": "board-exam-2083-widget",
+  "version": "1.0.0",
+  "description": "Class 12 NEB Board Exam 2083 Countdown – Desktop Widget",
+  "main": "electron/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win --x64",
+    "build-portable": "electron-builder --win portable",
+    "build:web": "node scripts/generate-notes.js"
+  },
+  "build": {
+    "appId": "com.nepal.board2083.widget",
+    "productName": "Board Exam 2083",
+    "win": {
+      "target": ["portable"],
+      "icon": "favicon.svg"
+    },
+    "portable": {
+      "artifactName": "BoardExam2083-Widget.exe"
+    },
+    "files": [
+      "electron/**/*",
+      "index.html",
+      "style.css",
+      "script.js",
+      "favicon.svg"
+    ],
+    "extraResources": [],
+    "asar": true
+  },
+  "keywords": ["countdown", "nepal", "board-exam", "widget"],
+  "author": "Susant07-star",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "electron-builder": "^24.13.3"
+  }
+}
