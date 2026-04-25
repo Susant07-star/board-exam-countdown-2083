@@ -81,13 +81,15 @@ function updateCountdown() {
     }
 
     // Update Progress Bar
-    const timeElapsed = now - startDate;
-    let progress = (timeElapsed / totalDuration) * 100;
-    if (progress > 100) progress = 100;
-    if (progress < 0) progress = 0;
-    
-    progressBar.style.width = `${progress}%`;
-    progressPercent.innerText = `${progress.toFixed(4)}%`;
+    if (progressBar && progressPercent) {
+        const timeElapsed = now - startDate;
+        let progress = (timeElapsed / totalDuration) * 100;
+        if (progress > 100) progress = 100;
+        if (progress < 0) progress = 0;
+        
+        progressBar.style.width = `${progress}%`;
+        progressPercent.innerText = `${progress.toFixed(4)}%`;
+    }
 }
 
 const countdownInterval = setInterval(updateCountdown, 1000);
