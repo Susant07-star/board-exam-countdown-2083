@@ -19,15 +19,15 @@ if %errorlevel% neq 0 (
 
 :: Add all changes (including new notes)
 echo [1/3] Adding new files...
-git add .
+git add --verbose .
 
 :: Commit the changes
 echo [2/3] Committing changes...
 git commit -m "Auto-update notes and files"
 
 :: Push to GitHub
-echo [3/3] Pushing to GitHub...
-git push
+echo [3/3] Pushing to GitHub... (This might take a while for large PDFs!)
+git push --progress
 
 if %errorlevel% equ 0 (
     echo.

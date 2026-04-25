@@ -31,6 +31,7 @@ let subtextIndex = 0;
 
 // Update subtext
 function changeSubtext() {
+    if (!rotatingText) return;
     rotatingText.classList.remove('fade-in');
     rotatingText.classList.add('fade-out');
     
@@ -49,13 +50,14 @@ const formatTime = (time) => (time < 10 ? `0${time}` : time);
 
 // Main countdown function
 function updateCountdown() {
+    if (!hoursEl) return;
     const now = new Date().getTime();
     let timeRemaining = targetDate - now;
 
     if (timeRemaining < 0) {
         timeRemaining = 0;
         // You could add special "EXAM STARTED" logic here
-        rotatingText.textContent = "It's Time! Good Luck! 🔥";
+        if (rotatingText) rotatingText.textContent = "It's Time! Good Luck! 🔥";
         clearInterval(countdownInterval);
     }
 
@@ -93,6 +95,7 @@ updateCountdown(); // Initial call
 
 // Random Glitch Effect
 function randomGlitch() {
+    if (!countdownContainer) return;
     countdownContainer.classList.add('glitch-active');
     setTimeout(() => {
         countdownContainer.classList.remove('glitch-active');
@@ -106,6 +109,7 @@ setTimeout(randomGlitch, 3000);
 
 // Random Screen Flicker
 function randomFlicker() {
+    if (!flickerOverlay) return;
     if (Math.random() > 0.7) {
         flickerOverlay.classList.add('on');
         setTimeout(() => {

@@ -337,17 +337,75 @@ body {
   box-shadow: 0 5px 25px rgba(0, 212, 255, 0.3);
 }
 
+/* ============ PROMO BUTTON ============ */
 .promo-btn {
-  background: linear-gradient(135deg, rgba(244, 114, 182, 0.15), rgba(168, 85, 247, 0.2));
-  border-color: rgba(244, 114, 182, 0.5);
-  color: var(--pink-accent);
-  box-shadow: 0 0 15px rgba(244, 114, 182, 0.15);
+  background: linear-gradient(135deg, rgba(244, 114, 182, 0.1), rgba(168, 85, 247, 0.15));
+  border: 1px solid rgba(244, 114, 182, 0.5);
+  border-radius: 16px;
+  padding: 0.6rem 1.2rem;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+  animation: pulseGlow 2.5s infinite;
+  box-shadow: 0 0 20px rgba(244, 114, 182, 0.15);
+  -webkit-app-region: no-drag;
 }
 
 .promo-btn:hover {
-  background: linear-gradient(135deg, rgba(244, 114, 182, 0.3), rgba(168, 85, 247, 0.4));
+  background: linear-gradient(135deg, rgba(244, 114, 182, 0.25), rgba(168, 85, 247, 0.35));
   border-color: var(--pink-accent);
-  box-shadow: 0 5px 25px rgba(244, 114, 182, 0.4);
+  box-shadow: 0 8px 30px rgba(244, 114, 182, 0.3);
+  transform: translateY(-3px);
+}
+
+.promo-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.promo-icon-wrap {
+  background: rgba(244, 114, 182, 0.15);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(244, 114, 182, 0.3);
+}
+
+.promo-icon {
+  font-size: 1.2rem;
+  color: var(--pink-accent);
+}
+
+.promo-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.promo-title {
+  font-size: clamp(0.85rem, 3vw, 1rem);
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px rgba(244, 114, 182, 0.5);
+}
+
+.promo-sub {
+  font-size: clamp(0.65rem, 2.5vw, 0.8rem);
+  color: var(--pink-accent);
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+@keyframes pulseGlow {
+  0% { box-shadow: 0 0 15px rgba(244, 114, 182, 0.1); transform: scale(1); }
+  50% { box-shadow: 0 0 25px rgba(244, 114, 182, 0.3); transform: scale(1.02); }
+  100% { box-shadow: 0 0 15px rgba(244, 114, 182, 0.1); transform: scale(1); }
 }
 
 /* ============ FOOTER ============ */
