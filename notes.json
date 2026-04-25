@@ -2,33 +2,1305 @@
   "subjects": [
     {
       "name": "Chemistry",
-      "files": []
+      "files": [
+        {
+          "name": "01_Paper & Pulp_13",
+          "filename": "01_Paper & Pulp_13.pdf",
+          "path": "notes/Chemistry/Applied Chemistry/01_Paper & Pulp_13.pdf",
+          "size": 43477,
+          "subfolder": "Applied Chemistry"
+        },
+        {
+          "name": "02_Nuclear Chemistry_all_set_questions",
+          "filename": "02_Nuclear Chemistry_all_set_questions.pdf",
+          "path": "notes/Chemistry/Applied Chemistry/02_Nuclear Chemistry_all_set_questions.pdf",
+          "size": 3914137,
+          "subfolder": "Applied Chemistry"
+        },
+        {
+          "name": "03_chemistry in service of mankind",
+          "filename": "03_chemistry in service of mankind.pdf",
+          "path": "notes/Chemistry/Applied Chemistry/03_chemistry in service of mankind.pdf",
+          "size": 782929,
+          "subfolder": "Applied Chemistry"
+        },
+        {
+          "name": "Radioactivity and Nuclear Chemistry",
+          "filename": "Radioactivity and Nuclear Chemistry.pdf",
+          "path": "notes/Chemistry/Applied Chemistry/Radioactivity and Nuclear Chemistry.pdf",
+          "size": 80004,
+          "subfolder": "Applied Chemistry"
+        },
+        {
+          "name": "Chemistry model set by NB sri",
+          "filename": "Chemistry model set by NB sri.pdf",
+          "path": "notes/Chemistry/Chemistry model set by NB sri.pdf",
+          "size": 957389,
+          "subfolder": null
+        },
+        {
+          "name": "Chemistry model test",
+          "filename": "Chemistry model test.pdf",
+          "path": "notes/Chemistry/Chemistry model test.pdf",
+          "size": 191394,
+          "subfolder": null
+        },
+        {
+          "name": "CHEMISTRY12 vvvii with reaction series",
+          "filename": "CHEMISTRY12 vvvii with reaction series.pdf",
+          "path": "notes/Chemistry/CHEMISTRY12 vvvii with reaction series.pdf",
+          "size": 996391,
+          "subfolder": null
+        },
+        {
+          "name": "CHEMISTRY12 vvvii with reaction series_02",
+          "filename": "CHEMISTRY12 vvvii with reaction series_02.pdf",
+          "path": "notes/Chemistry/CHEMISTRY12 vvvii with reaction series_02.pdf",
+          "size": 705777,
+          "subfolder": null
+        },
+        {
+          "name": "HeavyMetals_Copper",
+          "filename": "HeavyMetals_Copper.pdf",
+          "path": "notes/Chemistry/Inorganic Chemistry/HeavyMetals_Copper.pdf",
+          "size": 1709950,
+          "subfolder": "Inorganic Chemistry"
+        },
+        {
+          "name": "01_Chemistry Haloalkanes & Haloarenes",
+          "filename": "01_Chemistry Haloalkanes & Haloarenes.pdf",
+          "path": "notes/Chemistry/Organic Chemistry/01_Chemistry Haloalkanes & Haloarenes.pdf",
+          "size": 40246997,
+          "subfolder": "Organic Chemistry"
+        },
+        {
+          "name": "02-Alcohols and Phenols online note",
+          "filename": "02-Alcohols and Phenols online note.pdf",
+          "path": "notes/Chemistry/Organic Chemistry/02-Alcohols and Phenols online note.pdf",
+          "size": 27678282,
+          "subfolder": "Organic Chemistry"
+        },
+        {
+          "name": "03_Aldehyde and ketones",
+          "filename": "03_Aldehyde and ketones.pdf",
+          "path": "notes/Chemistry/Organic Chemistry/03_Aldehyde and ketones.pdf",
+          "size": 25700725,
+          "subfolder": "Organic Chemistry"
+        },
+        {
+          "name": "04_Nitro compounds and Amines",
+          "filename": "04_Nitro compounds and Amines.pdf",
+          "path": "notes/Chemistry/Organic Chemistry/04_Nitro compounds and Amines.pdf",
+          "size": 32510854,
+          "subfolder": "Organic Chemistry"
+        },
+        {
+          "name": "05_Carboxylic_Chemistry",
+          "filename": "05_Carboxylic_Chemistry.pdf",
+          "path": "notes/Chemistry/Organic Chemistry/05_Carboxylic_Chemistry.pdf",
+          "size": 33355296,
+          "subfolder": "Organic Chemistry"
+        },
+        {
+          "name": "06_Q-A Chemistry",
+          "filename": "06_Q-A Chemistry.pdf",
+          "path": "notes/Chemistry/Organic Chemistry/06_Q-A Chemistry.pdf",
+          "size": 31740462,
+          "subfolder": "Organic Chemistry"
+        },
+        {
+          "name": "07_Chemistry Q&A-02",
+          "filename": "07_Chemistry Q&A-02.pdf",
+          "path": "notes/Chemistry/Organic Chemistry/07_Chemistry Q&A-02.pdf",
+          "size": 24536180,
+          "subfolder": "Organic Chemistry"
+        },
+        {
+          "name": "organic chemistry Name Reaction-1",
+          "filename": "organic chemistry Name Reaction-1.pdf",
+          "path": "notes/Chemistry/organic chemistry Name Reaction-1.pdf",
+          "size": 2161137,
+          "subfolder": null
+        },
+        {
+          "name": "01_Volumetric",
+          "filename": "01_Volumetric.pdf",
+          "path": "notes/Chemistry/Physical Chemistry/01_Volumetric.pdf",
+          "size": 3589338,
+          "subfolder": "Physical Chemistry"
+        },
+        {
+          "name": "02_Ionic ",
+          "filename": "02_Ionic .pdf",
+          "path": "notes/Chemistry/Physical Chemistry/02_Ionic .pdf",
+          "size": 35851277,
+          "subfolder": "Physical Chemistry"
+        },
+        {
+          "name": "03_Kinetics-Chemistry",
+          "filename": "03_Kinetics-Chemistry.pdf",
+          "path": "notes/Chemistry/Physical Chemistry/03_Kinetics-Chemistry.pdf",
+          "size": 29067585,
+          "subfolder": "Physical Chemistry"
+        },
+        {
+          "name": "Volumetric Set questions",
+          "filename": "Volumetric Set questions.pdf",
+          "path": "notes/Chemistry/Physical Chemistry/Volumetric Set questions.pdf",
+          "size": 4091512,
+          "subfolder": "Physical Chemistry"
+        },
+        {
+          "name": "XII pre-board_sample_answer",
+          "filename": "XII pre-board_sample_answer.pdf",
+          "path": "notes/Chemistry/XII pre-board_sample_answer.pdf",
+          "size": 249374,
+          "subfolder": null
+        }
+      ]
     },
     {
       "name": "Computer",
-      "files": []
+      "files": [
+        {
+          "name": "Advantages and Disadvantages of DBMS",
+          "filename": "Advantages and Disadvantages of DBMS.pdf",
+          "path": "notes/Computer/Advantages and Disadvantages of DBMS.pdf",
+          "size": 97428,
+          "subfolder": null
+        },
+        {
+          "name": "Call_by_value_VS_Call_by_reference",
+          "filename": "Call_by_value_VS_Call_by_reference.pdf",
+          "path": "notes/Computer/Call_by_value_VS_Call_by_reference.pdf",
+          "size": 52964,
+          "subfolder": null
+        },
+        {
+          "name": "C_programming code",
+          "filename": "C_programming code.pdf",
+          "path": "notes/Computer/C_programming code.pdf",
+          "size": 419250,
+          "subfolder": null
+        },
+        {
+          "name": "Data_Normalization",
+          "filename": "Data_Normalization.pdf",
+          "path": "notes/Computer/Data_Normalization.pdf",
+          "size": 668405,
+          "subfolder": null
+        },
+        {
+          "name": "DDL vs DML & Network vs Hierarchical Model",
+          "filename": "DDL vs DML & Network vs Hierarchical Model.pdf",
+          "path": "notes/Computer/DDL vs DML & Network vs Hierarchical Model.pdf",
+          "size": 43251,
+          "subfolder": null
+        },
+        {
+          "name": "JS CODES FOR EXAM",
+          "filename": "JS CODES FOR EXAM.pdf",
+          "path": "notes/Computer/JS CODES FOR EXAM.pdf",
+          "size": 114374,
+          "subfolder": null
+        },
+        {
+          "name": "Network_Architecture_Notes",
+          "filename": "Network_Architecture_Notes.pdf",
+          "path": "notes/Computer/Network_Architecture_Notes.pdf",
+          "size": 157454,
+          "subfolder": null
+        },
+        {
+          "name": "OSI Reference Model",
+          "filename": "OSI Reference Model.pdf",
+          "path": "notes/Computer/OSI Reference Model.pdf",
+          "size": 131632,
+          "subfolder": null
+        },
+        {
+          "name": "Probable_Questions_of_C_program",
+          "filename": "Probable_Questions_of_C_program.pdf",
+          "path": "notes/Computer/Probable_Questions_of_C_program.pdf",
+          "size": 121866,
+          "subfolder": null
+        },
+        {
+          "name": "RECENT TRENDS IN TECHNOLOGY",
+          "filename": "RECENT TRENDS IN TECHNOLOGY.pdf",
+          "path": "notes/Computer/RECENT TRENDS IN TECHNOLOGY.pdf",
+          "size": 1636721,
+          "subfolder": null
+        },
+        {
+          "name": "Requirement Collection Methods",
+          "filename": "Requirement Collection Methods.pdf",
+          "path": "notes/Computer/Software_Process_Model/Requirement Collection Methods.pdf",
+          "size": 93570,
+          "subfolder": "Software_Process_Model"
+        },
+        {
+          "name": "Stages of SDLC",
+          "filename": "Stages of SDLC.pdf",
+          "path": "notes/Computer/Software_Process_Model/Stages of SDLC.pdf",
+          "size": 96930,
+          "subfolder": "Software_Process_Model"
+        },
+        {
+          "name": "XII LAB REPORT ",
+          "filename": "XII LAB REPORT .pdf",
+          "path": "notes/Computer/XII LAB REPORT .pdf",
+          "size": 495827,
+          "subfolder": null
+        }
+      ]
     },
     {
       "name": "English",
-      "files": []
+      "files": [
+        {
+          "name": "A_deveoted_son",
+          "filename": "A_deveoted_son.pdf",
+          "path": "notes/English/English_Chapters/A_deveoted_son.pdf",
+          "size": 1217240,
+          "subfolder": "English_Chapters"
+        },
+        {
+          "name": "A_Respectable_Woman",
+          "filename": "A_Respectable_Woman.pdf",
+          "path": "notes/English/English_Chapters/A_Respectable_Woman.pdf",
+          "size": 614007,
+          "subfolder": "English_Chapters"
+        },
+        {
+          "name": "Marraige_as_a_Social_Institution",
+          "filename": "Marraige_as_a_Social_Institution.pdf",
+          "path": "notes/English/English_Chapters/Marraige_as_a_Social_Institution.pdf",
+          "size": 562803,
+          "subfolder": "English_Chapters"
+        },
+        {
+          "name": "Neighbours_Chapter_1",
+          "filename": "Neighbours_Chapter_1.pdf",
+          "path": "notes/English/English_Chapters/Neighbours_Chapter_1.pdf",
+          "size": 1146798,
+          "subfolder": "English_Chapters"
+        },
+        {
+          "name": "UNIT_2_lesson_4_The_Awakening_Age",
+          "filename": "UNIT_2_lesson_4_The_Awakening_Age.pdf",
+          "path": "notes/English/English_Chapters/UNIT_2_lesson_4_The_Awakening_Age.pdf",
+          "size": 121708,
+          "subfolder": "English_Chapters"
+        },
+        {
+          "name": "Unit_4_Lesson_1_A_Matter_of_Husbands",
+          "filename": "Unit_4_Lesson_1_A_Matter_of_Husbands.pdf",
+          "path": "notes/English/English_Chapters/Unit_4_Lesson_1_A_Matter_of_Husbands.pdf",
+          "size": 143780,
+          "subfolder": "English_Chapters"
+        },
+        {
+          "name": "01_Adjectives and Adverbs",
+          "filename": "01_Adjectives and Adverbs.pdf",
+          "path": "notes/English/Grammar/01_Adjectives and Adverbs.pdf",
+          "size": 110010,
+          "subfolder": "Grammar"
+        },
+        {
+          "name": "02_Subject-Verb agreement",
+          "filename": "02_Subject-Verb agreement.pdf",
+          "path": "notes/English/Grammar/02_Subject-Verb agreement.pdf",
+          "size": 164759,
+          "subfolder": "Grammar"
+        },
+        {
+          "name": "Chat_GPT_Grade12_English_Grammar_Reference_and_Practice",
+          "filename": "Chat_GPT_Grade12_English_Grammar_Reference_and_Practice.pdf",
+          "path": "notes/English/Grammar/Chat_GPT_Grade12_English_Grammar_Reference_and_Practice.pdf",
+          "size": 356652,
+          "subfolder": "Grammar"
+        },
+        {
+          "name": "Perplexity_AI_Grammar-20 units",
+          "filename": "Perplexity_AI_Grammar-20 units.pdf",
+          "path": "notes/English/Grammar/Perplexity_AI_Grammar-20 units.pdf",
+          "size": 1965274,
+          "subfolder": "Grammar"
+        }
+      ]
     },
     {
       "name": "Maths",
-      "files": []
+      "files": [
+        {
+          "name": "Basic-Mathematics-XII_solution",
+          "filename": "Basic-Mathematics-XII_solution.pdf",
+          "path": "notes/Maths/Basic-Mathematics-XII_solution.pdf",
+          "size": 5013908,
+          "subfolder": null
+        },
+        {
+          "name": "Conic-Section-Complete-Explained",
+          "filename": "Conic-Section-Complete-Explained.pdf",
+          "path": "notes/Maths/Conic-Section-Complete-Explained.pdf",
+          "size": 486227,
+          "subfolder": null
+        },
+        {
+          "name": "Correlation and Regression Theory Guide",
+          "filename": "Correlation and Regression Theory Guide.pdf",
+          "path": "notes/Maths/Correlation and Regression Theory Guide.pdf",
+          "size": 745755,
+          "subfolder": null
+        },
+        {
+          "name": "Differential_Equations_Explained",
+          "filename": "Differential_Equations_Explained.pdf",
+          "path": "notes/Maths/Differential_Equations_Explained.pdf",
+          "size": 284446,
+          "subfolder": null
+        },
+        {
+          "name": "logarithmic-binomial theorem",
+          "filename": "logarithmic-binomial theorem.png",
+          "path": "notes/Maths/logarithmic-binomial theorem.png",
+          "size": 309965,
+          "subfolder": null
+        },
+        {
+          "name": "Solution_of_Triangle_Explained",
+          "filename": "Solution_of_Triangle_Explained.pdf",
+          "path": "notes/Maths/Solution_of_Triangle_Explained.pdf",
+          "size": 313801,
+          "subfolder": null
+        }
+      ]
     },
     {
       "name": "Nepali",
-      "files": []
+      "files": [
+        {
+          "name": "01_Nepali-Baykaran",
+          "filename": "01_Nepali-Baykaran.pdf",
+          "path": "notes/Nepali/Baykaran/01_Nepali-Baykaran.pdf",
+          "size": 302494,
+          "subfolder": "Baykaran"
+        },
+        {
+          "name": "02_Nepali-Baykaran",
+          "filename": "02_Nepali-Baykaran.pdf",
+          "path": "notes/Nepali/Baykaran/02_Nepali-Baykaran.pdf",
+          "size": 478456,
+          "subfolder": "Baykaran"
+        },
+        {
+          "name": "Ek-Chihan-Nepali-Samaj-ko-chitran",
+          "filename": "Ek-Chihan-Nepali-Samaj-ko-chitran.pdf",
+          "path": "notes/Nepali/Ek-Chihan-Nepali-Samaj-ko-chitran.pdf",
+          "size": 249906,
+          "subfolder": null
+        },
+        {
+          "name": "Tipanni Lekhan",
+          "filename": "Tipanni Lekhan.htm",
+          "path": "notes/Nepali/Free_Writing/Tipanni Lekhan.htm",
+          "size": 1214863,
+          "subfolder": "Free_Writing"
+        },
+        {
+          "name": "152910a91fbbd35e7e4df8d199d8390b.js",
+          "filename": "152910a91fbbd35e7e4df8d199d8390b.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/152910a91fbbd35e7e4df8d199d8390b.js.download",
+          "size": 55929,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "4bF4FRaNphU",
+          "filename": "4bF4FRaNphU.html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/4bF4FRaNphU.html",
+          "size": 164843,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "ads(1)",
+          "filename": "ads(1).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/ads(1).html",
+          "size": 2349,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "ads(2)",
+          "filename": "ads(2).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/ads(2).html",
+          "size": 2360,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "ads(3)",
+          "filename": "ads(3).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/ads(3).html",
+          "size": 2145,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "ads(4)",
+          "filename": "ads(4).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/ads(4).html",
+          "size": 22845,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "ads(5)",
+          "filename": "ads(5).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/ads(5).html",
+          "size": 2183,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "ads(6)",
+          "filename": "ads(6).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/ads(6).html",
+          "size": 2309,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "ads(7)",
+          "filename": "ads(7).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/ads(7).html",
+          "size": 267825,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "ads",
+          "filename": "ads.html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/ads.html",
+          "size": 2330,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "ads.js",
+          "filename": "ads.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/ads.js.download",
+          "size": 157415,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "ad_status.js",
+          "filename": "ad_status.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/ad_status.js.download",
+          "size": 29,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "aframe",
+          "filename": "aframe.html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/aframe.html",
+          "size": 902,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "async-ads(1).js",
+          "filename": "async-ads(1).js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/async-ads(1).js.download",
+          "size": 157172,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "async-ads.js",
+          "filename": "async-ads.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/async-ads.js.download",
+          "size": 157198,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "base.js",
+          "filename": "base.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/base.js.download",
+          "size": 2625674,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "bping",
+          "filename": "bping.php",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/bping.php",
+          "size": 35,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "bql",
+          "filename": "bql.php",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/bql.php",
+          "size": 15,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "ca-pub-5583977365978929",
+          "filename": "ca-pub-5583977365978929",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/ca-pub-5583977365978929",
+          "size": 211086,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "cast_sender(1).js",
+          "filename": "cast_sender(1).js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/cast_sender(1).js.download",
+          "size": 48677,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "cast_sender.js",
+          "filename": "cast_sender.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/cast_sender.js.download",
+          "size": 4272,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "checksync",
+          "filename": "checksync.html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/checksync.html",
+          "size": 25723,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "chevron",
+          "filename": "chevron.svg",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/chevron.svg",
+          "size": 200,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "Class 12 Nepali",
+          "filename": "Class 12 Nepali",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/Class 12 Nepali",
+          "size": 2204,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "Class 12 Nepali(1)",
+          "filename": "Class 12 Nepali(1)",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/Class 12 Nepali(1)",
+          "size": 14710,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "cse_element__en.js",
+          "filename": "cse_element__en.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/cse_element__en.js.download",
+          "size": 302888,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "css",
+          "filename": "css",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/css",
+          "size": 17382,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "css2",
+          "filename": "css2",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/css2",
+          "size": 5746,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "default",
+          "filename": "default.css",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/default.css",
+          "size": 7356,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "default_v5+en",
+          "filename": "default_v5+en.css",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/default_v5+en.css",
+          "size": 43076,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "embed.js",
+          "filename": "embed.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/embed.js.download",
+          "size": 33166,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f(1)",
+          "filename": "f(1).txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f(1).txt",
+          "size": 23134,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f(10)",
+          "filename": "f(10).txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f(10).txt",
+          "size": 161355,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f(11)",
+          "filename": "f(11).txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f(11).txt",
+          "size": 9054,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f(2)",
+          "filename": "f(2).txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f(2).txt",
+          "size": 1730,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f(3)",
+          "filename": "f(3).txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f(3).txt",
+          "size": 22131,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f(4)",
+          "filename": "f(4).txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f(4).txt",
+          "size": 2772,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f(5)",
+          "filename": "f(5).txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f(5).txt",
+          "size": 20578,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f(6)",
+          "filename": "f(6).txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f(6).txt",
+          "size": 227084,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f(7)",
+          "filename": "f(7).txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f(7).txt",
+          "size": 188441,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f(8)",
+          "filename": "f(8).txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f(8).txt",
+          "size": 512077,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f(9)",
+          "filename": "f(9).txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f(9).txt",
+          "size": 161347,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "f",
+          "filename": "f.txt",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/f.txt",
+          "size": 15305,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "image (36)",
+          "filename": "image (36).webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/image (36).webp",
+          "size": 16892,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "js",
+          "filename": "js",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/js",
+          "size": 369235,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "l",
+          "filename": "l",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/l",
+          "size": 0,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "l(1)",
+          "filename": "l(1)",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/l(1)",
+          "size": 0,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "Mkc0HQ3q9uAkWdO6ytgMG92R8a6WJmeERqS0lSIqoG8.js",
+          "filename": "Mkc0HQ3q9uAkWdO6ytgMG92R8a6WJmeERqS0lSIqoG8.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/Mkc0HQ3q9uAkWdO6ytgMG92R8a6WJmeERqS0lSIqoG8.js.download",
+          "size": 58624,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "Og_XKqY7b2-MK_5dU6hsMObFehE_V36gglh__Yv7ydA.js",
+          "filename": "Og_XKqY7b2-MK_5dU6hsMObFehE_V36gglh__Yv7ydA.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/Og_XKqY7b2-MK_5dU6hsMObFehE_V36gglh__Yv7ydA.js.download",
+          "size": 58745,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "re",
+          "filename": "re.html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/re.html",
+          "size": 199,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "remote.js",
+          "filename": "remote.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/remote.js.download",
+          "size": 123827,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "SAFEFRAME",
+          "filename": "SAFEFRAME.html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/SAFEFRAME.html",
+          "size": 246440,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "saved_resource(1)",
+          "filename": "saved_resource(1).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/saved_resource(1).html",
+          "size": 347,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "saved_resource(2)",
+          "filename": "saved_resource(2).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/saved_resource(2).html",
+          "size": 149,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "saved_resource(3)",
+          "filename": "saved_resource(3).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/saved_resource(3).html",
+          "size": 149,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "saved_resource(4)",
+          "filename": "saved_resource(4).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/saved_resource(4).html",
+          "size": 149,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "saved_resource(5)",
+          "filename": "saved_resource(5).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/saved_resource(5).html",
+          "size": 149,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "saved_resource(6)",
+          "filename": "saved_resource(6).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/saved_resource(6).html",
+          "size": 149,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "saved_resource(7)",
+          "filename": "saved_resource(7).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/saved_resource(7).html",
+          "size": 149,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "saved_resource",
+          "filename": "saved_resource.html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/saved_resource.html",
+          "size": 64092,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "search",
+          "filename": "search.svg",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/search.svg",
+          "size": 391,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "sodar",
+          "filename": "sodar",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/sodar",
+          "size": 0,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "www-embed-player.js",
+          "filename": "www-embed-player.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/www-embed-player.js.download",
+          "size": 392331,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "www-player",
+          "filename": "www-player.css",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/www-player.css",
+          "size": 509996,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "zrt_lookup_fy2021(1)",
+          "filename": "zrt_lookup_fy2021(1).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/zrt_lookup_fy2021(1).html",
+          "size": 8737,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "zrt_lookup_fy2021(2)",
+          "filename": "zrt_lookup_fy2021(2).html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/zrt_lookup_fy2021(2).html",
+          "size": 92553,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "zrt_lookup_fy2021",
+          "filename": "zrt_lookup_fy2021.html",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/zrt_lookup_fy2021.html",
+          "size": 135995,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-003",
+          "filename": "विरहिणी दमयन्ती (1)-page-003.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-003.webp",
+          "size": 42886,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-004",
+          "filename": "विरहिणी दमयन्ती (1)-page-004.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-004.webp",
+          "size": 56792,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-005",
+          "filename": "विरहिणी दमयन्ती (1)-page-005.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-005.webp",
+          "size": 50664,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-006",
+          "filename": "विरहिणी दमयन्ती (1)-page-006.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-006.webp",
+          "size": 53368,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-007",
+          "filename": "विरहिणी दमयन्ती (1)-page-007.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-007.webp",
+          "size": 57308,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-008",
+          "filename": "विरहिणी दमयन्ती (1)-page-008.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-008.webp",
+          "size": 62210,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-009",
+          "filename": "विरहिणी दमयन्ती (1)-page-009.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-009.webp",
+          "size": 72998,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-010",
+          "filename": "विरहिणी दमयन्ती (1)-page-010.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-010.webp",
+          "size": 79046,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-011",
+          "filename": "विरहिणी दमयन्ती (1)-page-011.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-011.webp",
+          "size": 72852,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-012",
+          "filename": "विरहिणी दमयन्ती (1)-page-012.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-012.webp",
+          "size": 89414,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-013",
+          "filename": "विरहिणी दमयन्ती (1)-page-013.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-013.webp",
+          "size": 74188,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-014",
+          "filename": "विरहिणी दमयन्ती (1)-page-014.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-014.webp",
+          "size": 89620,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-015",
+          "filename": "विरहिणी दमयन्ती (1)-page-015.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-015.webp",
+          "size": 65148,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-016",
+          "filename": "विरहिणी दमयन्ती (1)-page-016.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-016.webp",
+          "size": 83692,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-017",
+          "filename": "विरहिणी दमयन्ती (1)-page-017.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-017.webp",
+          "size": 56140,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-018",
+          "filename": "विरहिणी दमयन्ती (1)-page-018.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-018.webp",
+          "size": 65108,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-019",
+          "filename": "विरहिणी दमयन्ती (1)-page-019.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-019.webp",
+          "size": 97354,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-020",
+          "filename": "विरहिणी दमयन्ती (1)-page-020.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-020.webp",
+          "size": 50872,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-021",
+          "filename": "विरहिणी दमयन्ती (1)-page-021.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-021.webp",
+          "size": 20142,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-022",
+          "filename": "विरहिणी दमयन्ती (1)-page-022.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-022.webp",
+          "size": 37680,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-023",
+          "filename": "विरहिणी दमयन्ती (1)-page-023.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-023.webp",
+          "size": 21668,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-024",
+          "filename": "विरहिणी दमयन्ती (1)-page-024.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-024.webp",
+          "size": 41034,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "विरहिणी दमयन्ती (1)-page-025",
+          "filename": "विरहिणी दमयन्ती (1)-page-025.webp",
+          "path": "notes/Nepali/Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files/विरहिणी दमयन्ती (1)-page-025.webp",
+          "size": 50680,
+          "subfolder": "Nepali_Chapters/Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2_files"
+        },
+        {
+          "name": "Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali",
+          "filename": "Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali.html",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali.html",
+          "size": 55236,
+          "subfolder": "Nepali_Chapters"
+        },
+        {
+          "name": "beacon.min.js",
+          "filename": "beacon.min.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files/beacon.min.js.download",
+          "size": 19948,
+          "subfolder": "Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "c12ng",
+          "filename": "c12ng.png",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files/c12ng.png",
+          "size": 79476,
+          "subfolder": "Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "dropdown",
+          "filename": "dropdown.svg",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files/dropdown.svg",
+          "size": 308,
+          "subfolder": "Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "f",
+          "filename": "f.txt",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files/f.txt",
+          "size": 164491,
+          "subfolder": "Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "facebook",
+          "filename": "facebook.svg",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files/facebook.svg",
+          "size": 688,
+          "subfolder": "Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "hoisted.Dsmem2u_.js",
+          "filename": "hoisted.Dsmem2u_.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files/hoisted.Dsmem2u_.js.download",
+          "size": 1084,
+          "subfolder": "Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "instagram",
+          "filename": "instagram.svg",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files/instagram.svg",
+          "size": 2804,
+          "subfolder": "Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "js",
+          "filename": "js",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files/js",
+          "size": 403584,
+          "subfolder": "Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "logo",
+          "filename": "logo.png",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files/logo.png",
+          "size": 20571,
+          "subfolder": "Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "partytown-sandbox-sw",
+          "filename": "partytown-sandbox-sw.html",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files/partytown-sandbox-sw.html",
+          "size": 41891,
+          "subfolder": "Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "_slug_.D-g8QmeB",
+          "filename": "_slug_.D-g8QmeB.css",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files/_slug_.D-g8QmeB.css",
+          "size": 11702,
+          "subfolder": "Nepali_Chapters/Chapter 1_ Aama Ko Sapana Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "Chapter 2_Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2",
+          "filename": "Chapter 2_Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2.html",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 2_Birahini Damayanti Class 12 Exercise & Summary - Nepali 12 Chapter 2.html",
+          "size": 282984,
+          "subfolder": "Nepali_Chapters"
+        },
+        {
+          "name": "Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali",
+          "filename": "Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali.html",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali.html",
+          "size": 49545,
+          "subfolder": "Nepali_Chapters"
+        },
+        {
+          "name": "beacon.min.js",
+          "filename": "beacon.min.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files/beacon.min.js.download",
+          "size": 19948,
+          "subfolder": "Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "c12ng",
+          "filename": "c12ng.png",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files/c12ng.png",
+          "size": 79476,
+          "subfolder": "Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "dropdown",
+          "filename": "dropdown.svg",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files/dropdown.svg",
+          "size": 308,
+          "subfolder": "Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "f",
+          "filename": "f.txt",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files/f.txt",
+          "size": 164638,
+          "subfolder": "Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "facebook",
+          "filename": "facebook.svg",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files/facebook.svg",
+          "size": 688,
+          "subfolder": "Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "hoisted.Dsmem2u_.js",
+          "filename": "hoisted.Dsmem2u_.js.download",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files/hoisted.Dsmem2u_.js.download",
+          "size": 1084,
+          "subfolder": "Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "instagram",
+          "filename": "instagram.svg",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files/instagram.svg",
+          "size": 2804,
+          "subfolder": "Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "js",
+          "filename": "js",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files/js",
+          "size": 404674,
+          "subfolder": "Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "logo",
+          "filename": "logo.png",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files/logo.png",
+          "size": 20571,
+          "subfolder": "Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "partytown-sandbox-sw",
+          "filename": "partytown-sandbox-sw.html",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files/partytown-sandbox-sw.html",
+          "size": 41891,
+          "subfolder": "Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "_slug_.D-g8QmeB",
+          "filename": "_slug_.D-g8QmeB.css",
+          "path": "notes/Nepali/Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files/_slug_.D-g8QmeB.css",
+          "size": 11702,
+          "subfolder": "Nepali_Chapters/Chapter 3_ Ghanghasyako Ukalo Kattha Exercise _ Class 12 Nepali_files"
+        },
+        {
+          "name": "विरहिणी दमयन्तीले नल नलाई प्राप्त गर्नको लागि गरेको संघर्ष",
+          "filename": "विरहिणी दमयन्तीले नल नलाई प्राप्त गर्नको लागि गरेको संघर्ष.pdf",
+          "path": "notes/Nepali/Nepali_Chapters/विरहिणी दमयन्तीले नल नलाई प्राप्त गर्नको लागि गरेको संघर्ष.pdf",
+          "size": 90761,
+          "subfolder": "Nepali_Chapters"
+        },
+        {
+          "name": "एक चिहान-Important_Questions-no_pass",
+          "filename": "एक चिहान-Important_Questions-no_pass.pdf",
+          "path": "notes/Nepali/एक चिहान-Important_Questions-no_pass.pdf",
+          "size": 452293,
+          "subfolder": null
+        },
+        {
+          "name": "एक चिहान-Important_Questions",
+          "filename": "एक चिहान-Important_Questions.pdf",
+          "path": "notes/Nepali/एक चिहान-Important_Questions.pdf",
+          "size": 277256,
+          "subfolder": null
+        },
+        {
+          "name": "एक चिहान-Important_Questions_Final",
+          "filename": "एक चिहान-Important_Questions_Final.pdf",
+          "path": "notes/Nepali/एक चिहान-Important_Questions_Final.pdf",
+          "size": 454702,
+          "subfolder": null
+        }
+      ]
     },
     {
       "name": "Physics",
       "files": [
         {
-          "name": "dummy-physics-notes",
-          "filename": "dummy-physics-notes.pdf",
-          "path": "notes/Physics/dummy-physics-notes.pdf",
-          "size": 40,
+          "name": "4. Acoustic Phenomenon_Note_By_Teacher",
+          "filename": "4. Acoustic Phenomenon_Note_By_Teacher.pdf",
+          "path": "notes/Physics/4. Acoustic Phenomenon_Note_By_Teacher.pdf",
+          "size": 4638868,
           "subfolder": null
+        },
+        {
+          "name": "ELECTROMAGENETIC INDUCTION",
+          "filename": "ELECTROMAGENETIC INDUCTION.pdf",
+          "path": "notes/Physics/ELECTROMAGENETIC INDUCTION.pdf",
+          "size": 99645,
+          "subfolder": null
+        },
+        {
+          "name": "Mechanics_Chapter_1 Rotational Dynamics",
+          "filename": "Mechanics_Chapter_1 Rotational Dynamics.docx",
+          "path": "notes/Physics/Mechanics/Mechanics_Chapter_1 Rotational Dynamics.docx",
+          "size": 22174,
+          "subfolder": "Mechanics"
+        },
+        {
+          "name": "SHM PDF",
+          "filename": "SHM PDF.pdf",
+          "path": "notes/Physics/Mechanics/SHM PDF.pdf",
+          "size": 48378804,
+          "subfolder": "Mechanics"
+        },
+        {
+          "name": "Chapter_20 Electrons",
+          "filename": "Chapter_20 Electrons.docx",
+          "path": "notes/Physics/Modern Physics/Chapter_20 Electrons.docx",
+          "size": 77218,
+          "subfolder": "Modern Physics"
+        },
+        {
+          "name": "phyics model set",
+          "filename": "phyics model set.pdf",
+          "path": "notes/Physics/phyics model set.pdf",
+          "size": 27326852,
+          "subfolder": null
+        },
+        {
+          "name": "Physics - micro syallbus",
+          "filename": "Physics - micro syallbus.pdf",
+          "path": "notes/Physics/Physics - micro syallbus.pdf",
+          "size": 1845696,
+          "subfolder": null
+        },
+        {
+          "name": "Waves_Chapter_7_Mechanical_Waves",
+          "filename": "Waves_Chapter_7_Mechanical_Waves.docx",
+          "path": "notes/Physics/Wave and Optics/Waves_Chapter_7_Mechanical_Waves.docx",
+          "size": 22201,
+          "subfolder": "Wave and Optics"
         }
       ]
     }
