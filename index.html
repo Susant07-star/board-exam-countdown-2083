@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- Widget-mode overrides — only enabled when running inside Electron -->
-    <style id="widget-styles" disabled>
+    <style id="widget-styles" media="none">
 
       /* ── Base transparency ── */
       html, body { background: transparent !important; overflow: hidden; }
@@ -264,7 +264,7 @@
     if (window.electronWidget) {
 
       // 1. Enable widget stylesheet
-      document.getElementById('widget-styles').removeAttribute('disabled');
+      document.getElementById('widget-styles').media = 'all';
 
       // 2. Hide to tray button
       document.getElementById('widget-hide-btn').addEventListener('click', () => {
