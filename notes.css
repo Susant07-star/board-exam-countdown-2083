@@ -10,8 +10,8 @@
     flex-direction: column;
     padding: clamp(1rem, 3vw, 2rem);
     gap: clamp(1rem, 3vw, 2rem);
-    background: radial-gradient(ellipse at center, rgba(6, 13, 36, 0.8) 0%, rgba(2, 6, 20, 0.95) 100%);
-    backdrop-filter: blur(20px);
+    background: radial-gradient(ellipse at center, rgba(6, 13, 36, 0.3) 0%, rgba(2, 6, 20, 0.6) 100%);
+    backdrop-filter: blur(8px);
 }
 
 .notes-header {
@@ -323,14 +323,18 @@
     }
     
     .notes-header {
-        flex-direction: row;
+        position: relative;
+        display: flex;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        margin-bottom: 0.5rem;
+        margin-bottom: 1rem;
+        padding-top: 2.5rem; /* Make room for the absolute back button */
     }
     
     .back-btn {
-        position: static;
+        position: absolute;
+        top: 0;
+        left: 0;
         margin-bottom: 0;
         width: max-content;
         font-size: 0.9rem;
@@ -340,6 +344,7 @@
     .notes-title {
         margin-top: 0;
         font-size: 1.8rem;
+        text-align: center;
     }
 }
 
