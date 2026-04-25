@@ -27,7 +27,8 @@
           "name": "dummy-physics-notes",
           "filename": "dummy-physics-notes.pdf",
           "path": "notes/Physics/dummy-physics-notes.pdf",
-          "size": 40
+          "size": 40,
+          "subfolder": null
         }
       ]
     }

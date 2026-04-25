@@ -125,8 +125,17 @@ document.addEventListener('DOMContentLoaded', async () => {
             const iconClass = isPdf ? 'fa-solid fa-file-pdf' : 'fa-solid fa-file';
             
             let subjectBadge = '';
+            let badges = [];
+            
             if (isSearchResult && file.subject) {
-                subjectBadge = `<span style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">${file.subject}</span>`;
+                badges.push(file.subject);
+            }
+            if (file.subfolder) {
+                badges.push(file.subfolder);
+            }
+            
+            if (badges.length > 0) {
+                subjectBadge = badges.map(b => `<span style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block; margin-right: 4px;">${b}</span>`).join('');
             }
 
             card.innerHTML = `

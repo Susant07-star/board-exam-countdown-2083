@@ -4,6 +4,42 @@ const path = require('path');
 const notesDir = path.join(__dirname, '../notes');
 const outputFile = path.join(__dirname, '../notes.json');
 
+function getAllFilesRecursive(dirPath, baseSubjectPath, arrayOfFiles) {
+  const files = fs.readdirSync(dirPath, { withFileTypes: true });
+
+  arrayOfFiles = arrayOfFiles || [];
+
+  files.forEach(function(file) {
+    if (file.isDirectory()) {
+      if (!file.name.startsWith('.')) {
+        arrayOfFiles = getAllFilesRecursive(path.join(dirPath, file.name), baseSubjectPath, arrayOfFiles);
+      }
+    } else {
+      if (!file.name.startsWith('.')) {
+        const fullPath = path.join(dirPath, file.name);
+        const relativePath = path.relative(baseSubjectPath, fullPath);
+        const dirname = path.dirname(relativePath);
+        const subfolder = dirname === '.' ? null : dirname.replace(/\\/g, '/');
+        
+        const ext = path.extname(file.name);
+        const name = path.basename(file.name, ext);
+        // Ensure web paths use forward slashes
+        const webPath = `notes/${path.basename(baseSubjectPath)}/${relativePath.replace(/\\/g, '/')}`;
+        
+        arrayOfFiles.push({
+          name: name,
+          filename: file.name,
+          path: webPath,
+          size: fs.statSync(fullPath).size,
+          subfolder: subfolder
+        });
+      }
+    }
+  });
+
+  return arrayOfFiles;
+}
+
 function generateNotesIndex() {
   const result = {
     subjects: []
@@ -25,18 +61,7 @@ function generateNotesIndex() {
 
   for (const subject of subjects) {
     const subjectPath = path.join(notesDir, subject);
-    const files = fs.readdirSync(subjectPath, { withFileTypes: true })
-      .filter(dirent => dirent.isFile() && !dirent.name.startsWith('.'))
-      .map(dirent => {
-        const ext = path.extname(dirent.name);
-        const name = path.basename(dirent.name, ext);
-        return {
-          name: name,
-          filename: dirent.name,
-          path: `notes/${subject}/${dirent.name}`,
-          size: fs.statSync(path.join(subjectPath, dirent.name)).size
-        };
-      });
+    const files = getAllFilesRecursive(subjectPath, subjectPath, []);
 
     result.subjects.push({
       name: subject,
