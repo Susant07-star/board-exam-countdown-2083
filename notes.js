@@ -111,52 +111,79 @@ document.addEventListener('DOMContentLoaded', async () => {
         
         emptyState.classList.add('hidden');
         
+        const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        
+        // Group files by subfolder
+        const groups = {};
         files.forEach(file => {
-            const sizeKB = (file.size / 1024).toFixed(1);
-            let sizeDisplay = `${sizeKB} KB`;
-            if (file.size > 1024 * 1024) {
-                sizeDisplay = `${(file.size / (1024 * 1024)).toFixed(2)} MB`;
-            }
+            const groupName = file.subfolder || 'General Notes';
+            if (!groups[groupName]) groups[groupName] = [];
+            groups[groupName].push(file);
+        });
+        
+        // Sort groups to put "General Notes" first, then alphabetically
+        const sortedGroupNames = Object.keys(groups).sort((a, b) => {
+            if (a === 'General Notes') return -1;
+            if (b === 'General Notes') return 1;
+            return a.localeCompare(b);
+        });
 
-            const card = document.createElement('div');
-            card.className = 'note-card';
-            
-            const isPdf = file.filename.toLowerCase().endsWith('.pdf');
-            const iconClass = isPdf ? 'fa-solid fa-file-pdf' : 'fa-solid fa-file';
-            
-            let subjectBadge = '';
-            let badges = [];
-            
-            if (isSearchResult && file.subject) {
-                badges.push(file.subject);
-            }
-            if (file.subfolder) {
-                badges.push(file.subfolder);
-            }
-            
-            if (badges.length > 0) {
-                subjectBadge = badges.map(b => `<span style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block; margin-right: 4px;">${b}</span>`).join('');
-            }
+        sortedGroupNames.forEach(groupName => {
+            // Create group header
+            const groupHeader = document.createElement('h2');
+            groupHeader.className = 'subfolder-header';
+            groupHeader.innerHTML = `<i class="fa-regular fa-folder-open"></i> ${groupName}`;
+            notesGrid.appendChild(groupHeader);
 
-            card.innerHTML = `
-                <div style="display: flex; align-items: flex-start; gap: 1rem;">
-                    <i class="${iconClass} note-icon"></i>
-                    <div class="note-info">
-                        ${subjectBadge}
-                        <h3 class="note-name" title="${file.name}">${file.name}</h3>
-                        <div class="note-meta">${sizeDisplay} • ${file.filename.split('.').pop().toUpperCase()}</div>
+            // Create grid for this group
+            const grid = document.createElement('div');
+            grid.className = 'notes-grid-layout';
+
+            groups[groupName].forEach(file => {
+                const sizeKB = (file.size / 1024).toFixed(1);
+                let sizeDisplay = `${sizeKB} KB`;
+                if (file.size > 1024 * 1024) {
+                    sizeDisplay = `${(file.size / (1024 * 1024)).toFixed(2)} MB`;
+                }
+
+                const card = document.createElement('div');
+                card.className = 'note-card';
+                
+                const isPdf = file.filename.toLowerCase().endsWith('.pdf');
+                const iconClass = isPdf ? 'fa-solid fa-file-pdf' : 'fa-solid fa-file';
+                
+                let subjectBadge = '';
+                if (isSearchResult && file.subject) {
+                    subjectBadge = `<span style="background: rgba(255,255,255,0.1); padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; margin-bottom: 0.5rem; display: inline-block;">${file.subject}</span>`;
+                }
+
+                let viewHref = file.path;
+                if (isMobile && isPdf) {
+                    const absoluteUrl = 'https://exam-countdown-2083.netlify.app/' + file.path;
+                    viewHref = `https://docs.google.com/viewer?url=${encodeURIComponent(absoluteUrl)}&embedded=true`;
+                }
+
+                card.innerHTML = `
+                    <div style="display: flex; align-items: flex-start; gap: 1rem;">
+                        <i class="${iconClass} note-icon"></i>
+                        <div class="note-info">
+                            ${subjectBadge}
+                            <h3 class="note-name" title="${file.name}">${file.name}</h3>
+                            <div class="note-meta">${sizeDisplay} • ${file.filename.split('.').pop().toUpperCase()}</div>
+                        </div>
                     </div>
-                </div>
-                <div class="note-actions">
-                    <a href="${file.path}" target="_blank" class="note-btn btn-view">
-                        <i class="fa-solid fa-eye"></i> View
-                    </a>
-                    <a href="${file.path}" download="${file.filename}" class="note-btn btn-download">
-                        <i class="fa-solid fa-download"></i> Download
-                    </a>
-                </div>
-            `;
-            notesGrid.appendChild(card);
+                    <div class="note-actions">
+                        <a href="${viewHref}" target="_blank" class="note-btn btn-view">
+                            <i class="fa-solid fa-eye"></i> View
+                        </a>
+                        <a href="${file.path}" download="${file.filename}" class="note-btn btn-download">
+                            <i class="fa-solid fa-download"></i> Download
+                        </a>
+                    </div>
+                `;
+                grid.appendChild(card);
+            });
+            notesGrid.appendChild(grid);
         });
     }
 });
