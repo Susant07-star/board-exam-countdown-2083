@@ -13,7 +13,9 @@
     "appId": "com.nepal.board2083.widget",
     "productName": "Board Exam 2083",
     "win": {
-      "target": ["portable"],
+      "target": [
+        "portable"
+      ],
       "icon": "favicon.svg"
     },
     "portable": {
@@ -29,11 +31,19 @@
     "extraResources": [],
     "asar": true
   },
-  "keywords": ["countdown", "nepal", "board-exam", "widget"],
+  "keywords": [
+    "countdown",
+    "nepal",
+    "board-exam",
+    "widget"
+  ],
   "author": "Susant07-star",
   "license": "MIT",
   "devDependencies": {
     "electron": "^30.0.0",
     "electron-builder": "^24.13.3"
+  },
+  "dependencies": {
+    "jsdom": "^29.0.2"
   }
 }
