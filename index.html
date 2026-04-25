@@ -5,14 +5,148 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Class 12 Board Exam 2083 Countdown</title>
     <meta name="description" content="Live countdown to Nepal Class 12 Board Exams 2083. Let's do this! 💪">
-    <!-- Favicon: SVG (modern browsers) + data URI fallback (all browsers) -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg">
     <link rel="apple-touch-icon" href="favicon.svg">
-    <!-- Inline data URI as universal fallback -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23020614'/%3E%3Ccircle cx='32' cy='32' r='28' fill='none' stroke='%23a855f7' stroke-width='2.5'/%3E%3Ccircle cx='32' cy='32' r='22' fill='none' stroke='%2300d4ff' stroke-width='1' stroke-dasharray='4 3'/%3E%3Ctext x='32' y='40' text-anchor='middle' font-family='Arial Black,Arial,sans-serif' font-weight='900' font-size='24' fill='%2300d4ff'%3E12%3C/text%3E%3C/svg%3E">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Widget-mode overrides — only enabled when running inside Electron -->
+    <style id="widget-styles" disabled>
+
+      /* ── Base transparency ── */
+      html, body { background: transparent !important; overflow: hidden; }
+
+      /* ── Shared wrapper ── */
+      .wrapper {
+        max-width: none !important;
+        width: 100vw !important;
+        height: 100vh !important;
+        margin: 0 !important;
+        padding: clamp(10px, 4vh, 30px) clamp(10px, 4vw, 30px) !important;
+        background: rgba(2, 6, 20, 0.82) !important;
+        backdrop-filter: blur(18px) saturate(1.4);
+        -webkit-backdrop-filter: blur(18px) saturate(1.4);
+        border-radius: 16px;
+        border: 1px solid rgba(168,85,247,0.22);
+        box-shadow: inset 0 0 20px rgba(168,85,247,0.05);
+        box-sizing: border-box;
+        overflow: hidden;
+        gap: clamp(4px, 2vh, 1.8rem) !important;
+        cursor: grab;
+        /* Enable native OS dragging to prevent high DPI scaling bugs */
+        -webkit-app-region: drag;
+        user-select: none;
+      }
+      .wrapper:active { cursor: grabbing; }
+
+      #stars-canvas { border-radius: 16px; }
+      footer { display: none !important; }
+
+      /* Hover close button */
+      #widget-hover-controls {
+        position: fixed; top: 12px; right: 12px; z-index: 99999;
+        opacity: 0; transition: opacity 0.2s;
+      }
+      .wrapper:hover ~ #widget-hover-controls, #widget-hover-controls:hover { opacity: 1; }
+      #widget-hide-btn {
+        background: rgba(2, 6, 20, 0.6); border: 1px solid rgba(244,114,182,0.3);
+        color: rgba(148,163,184,0.8); font-size: 12px; cursor: pointer;
+        width: 24px; height: 24px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        transition: all 0.2s;
+        /* Ensure buttons are clickable and don't trigger drag */
+        -webkit-app-region: no-drag;
+      }
+      #widget-hide-btn:hover { color: #fff; background: rgba(244,114,182,0.5); }
+
+      /* Eye buttons */
+      .eye-btn {
+        background: rgba(2, 6, 20, 0.6); border: 1px solid rgba(0,212,255,0.3);
+        color: rgba(0,212,255,0.8); font-size: 12px; cursor: pointer;
+        width: 26px; height: 26px; border-radius: 50%;
+        display: flex; align-items: center; justify-content: center;
+        transition: all 0.2s;
+        -webkit-app-region: no-drag;
+      }
+      .eye-btn:hover { color: #fff; background: rgba(0,212,255,0.5); }
+      
+      #eye-collapse-btn {
+        position: fixed; top: 12px; left: 12px; z-index: 99999;
+        opacity: 0; transition: opacity 0.2s;
+      }
+      .wrapper:hover ~ #eye-collapse-btn, #eye-collapse-btn:hover { opacity: 1; }
+
+      #collapsed-widget { display: none; }
+
+      /* Collapsed Mode */
+      body.collapsed-mode .wrapper,
+      body.collapsed-mode #widget-hover-controls,
+      body.collapsed-mode #eye-collapse-btn,
+      body.collapsed-mode #stars-canvas,
+      body.collapsed-mode #flicker {
+        display: none !important;
+      }
+      
+      body.collapsed-mode {
+        background: transparent !important;
+      }
+
+      body.collapsed-mode #collapsed-widget {
+        display: flex !important;
+        width: 100vw; height: 100vh;
+        background: rgba(2, 6, 20, 0.85);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(0,212,255,0.4);
+        border-radius: 20px;
+        align-items: center;
+        padding: 0 8px;
+        box-sizing: border-box;
+        -webkit-app-region: drag; /* entire pill is draggable */
+        gap: 6px;
+        box-shadow: 0 0 15px rgba(0,212,255,0.2);
+      }
+      body.collapsed-mode #collapsed-widget .drag-handle {
+        color: rgba(148,163,184,0.5); font-size: 10px; letter-spacing: 1px;
+      }
+
+      /* Dynamic text sizing that responds to window resizes */
+      .main-title { font-size: clamp(1rem, 6vmin, 3rem) !important; }
+      .time-num { font-size: clamp(1.2rem, 10vmin, 4rem) !important; }
+      .time-label { font-size: clamp(0.5rem, 2vmin, 0.75rem) !important; }
+      .motive-card { font-size: clamp(0.7rem, 2.5vmin, 1rem) !important; padding: clamp(8px, 2vh, 1rem) !important; }
+
+      /* Responsive Layout Hiding based on height */
+      @media (max-height: 500px) {
+        .info-row { display: none !important; }
+      }
+      @media (max-height: 400px) {
+        .motive-card { display: none !important; }
+      }
+      @media (max-height: 280px) {
+        .progress-section, .subtitle-wrap { display: none !important; }
+      }
+      @media (max-height: 180px) {
+        .top-badge, .main-title { display: none !important; }
+        .wrapper { flex-direction: row; align-items: center; justify-content: center; }
+        .countdown-grid { margin: 0; display: flex; align-items: center; gap: clamp(4px, 2vw, 1rem); }
+        .time-block { padding: clamp(4px, 1vh, 10px) clamp(8px, 2vw, 15px) !important; flex-direction: row; gap: 8px; align-items: baseline; }
+        .time-num { font-size: clamp(1.5rem, 15vmin, 4rem) !important; }
+      }
+
+      /* Responsive Layout Hiding based on width */
+      @media (max-width: 400px) {
+        .info-row, .motive-card { display: none !important; }
+        .countdown-grid { gap: 0.5rem; }
+        .time-block { padding: 0.8rem 0.4rem !important; }
+      }
+      @media (max-width: 250px) {
+        .top-badge, .progress-section, .subtitle-wrap { display: none !important; }
+      }
+
+    </style>
+
     <!-- Google Analytics 4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-4S25F9ZPET"></script>
     <script>
@@ -23,14 +157,11 @@
         page_title: 'Class 12 Board Exam 2083 Countdown',
         page_location: window.location.href
       });
-      // Event: Page loaded
-      gtag('event', 'page_view', {
-        event_category: 'engagement',
-        event_label: 'Countdown Page Loaded'
-      });
+      gtag('event', 'page_view', { event_category: 'engagement', event_label: 'Countdown Page Loaded' });
     </script>
 </head>
 <body>
+
     <!-- Canvas for particle background -->
     <canvas id="stars-canvas"></canvas>
 
@@ -39,18 +170,14 @@
 
     <div class="wrapper">
         <div class="top-badge">NEB Exams 2083</div>
-        
+
         <h1 class="main-title">Class 12 <span class="year-highlight">Board Exam</span><br>Countdown</h1>
-        
+
         <div class="subtitle-wrap">
             <h2 class="subtitle" id="rotating-text">Final battle begins...</h2>
         </div>
 
         <div class="countdown-grid" id="countdown-container">
-            <div class="time-block days">
-                <span class="time-num" id="days">00</span>
-                <span class="time-label">Days</span>
-            </div>
             <div class="time-block hours">
                 <span class="time-num" id="hours">00</span>
                 <span class="time-label">Hours</span>
@@ -90,6 +217,33 @@
                 <span>8:00 AM (NPT)</span>
             </div>
         </div>
+
+        <div class="action-row">
+            <a href="notes.html" class="action-btn">
+                <i class="fa-solid fa-book-open"></i> Study Notes
+            </a>
+            <a href="https://hourforgeapp.netlify.app/" target="_blank" class="action-btn promo-btn">
+                <i class="fa-solid fa-rocket"></i> HourForge App
+            </a>
+        </div>
+    </div>
+
+    <!-- Tiny hover controls -->
+    <div id="widget-hover-controls">
+      <button id="widget-hide-btn" title="Hide to tray (right-click tray to show)">✕</button>
+    </div>
+
+    <!-- Top left eye button (visible in expanded mode) -->
+    <button id="eye-collapse-btn" class="eye-btn" title="Hide Timer">
+      <i class="fa-solid fa-eye"></i>
+    </button>
+
+    <!-- Collapsed widget pill (visible only in collapsed mode) -->
+    <div id="collapsed-widget">
+      <button id="eye-expand-btn" class="eye-btn" title="Show Timer">
+        <i class="fa-solid fa-eye-slash"></i>
+      </button>
+      <div class="drag-handle">⋮⋮</div>
     </div>
 
     <footer>
@@ -97,5 +251,38 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+    // ── Widget logic — only active inside Electron ────────────────────────────
+    if (window.electronWidget) {
+
+      // 1. Enable widget stylesheet
+      document.getElementById('widget-styles').removeAttribute('disabled');
+
+      // 2. Hide to tray button
+      document.getElementById('widget-hide-btn').addEventListener('click', () => {
+        window.close(); // Hides to tray
+      });
+
+      // 3. Eye collapse/expand logic
+      document.getElementById('eye-collapse-btn').addEventListener('click', () => {
+        window.electronWidget.toggleCollapse();
+      });
+      document.getElementById('eye-expand-btn').addEventListener('click', () => {
+        window.electronWidget.toggleCollapse();
+      });
+
+      window.electronWidget.onCollapseState((isCollapsed) => {
+        if (isCollapsed) {
+          document.body.classList.add('collapsed-mode');
+        } else {
+          document.body.classList.remove('collapsed-mode');
+        }
+      });
+      
+      // Native dragging is now handled completely by CSS (-webkit-app-region: drag)
+      // This prevents the Windows High DPI scaling bug where setBounds causes resizing.
+
+    }
+    </script>
 </body>
 </html>

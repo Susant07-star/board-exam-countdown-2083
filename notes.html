@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Notes - Class 12 Board Exam 2083</title>
+    <meta name="description" content="Download study notes for Class 12 Nepal Board Exams 2083.">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="notes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Canvas for particle background -->
+    <canvas id="stars-canvas"></canvas>
+
+    <div class="flicker-overlay" id="flicker"></div>
+
+    <div class="notes-wrapper">
+        <header class="notes-header">
+            <a href="index.html" class="back-btn"><i class="fa-solid fa-arrow-left"></i> Back to Timer</a>
+            <h1 class="main-title notes-title">Study <span class="year-highlight">Notes</span></h1>
+        </header>
+
+        <main class="notes-container">
+            <aside class="subjects-sidebar" id="subjects-list">
+                <!-- Subjects will be injected here -->
+                <div class="loading-text">Loading subjects...</div>
+            </aside>
+
+            <section class="notes-content">
+                <div class="search-bar-container">
+                    <i class="fa-solid fa-search search-icon"></i>
+                    <input type="text" id="search-input" placeholder="Search notes...">
+                </div>
+
+                <div class="notes-grid" id="notes-grid">
+                    <!-- Note cards will be injected here -->
+                </div>
+                
+                <div id="empty-state" class="empty-state hidden">
+                    <i class="fa-solid fa-folder-open empty-icon"></i>
+                    <p>No notes found in this subject yet.</p>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Keep same script for stars background -->
+    <script src="script.js"></script>
+    <script src="notes.js"></script>
+</body>
+</html>

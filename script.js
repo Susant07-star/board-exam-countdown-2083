@@ -9,7 +9,6 @@ const startDate = new Date(Date.UTC(2025, 0, 1, 0, 0, 0)).getTime();
 const totalDuration = targetDate - startDate;
 
 // DOM Elements
-const daysEl = document.getElementById('days');
 const hoursEl = document.getElementById('hours');
 const minutesEl = document.getElementById('minutes');
 const secondsEl = document.getElementById('seconds');
@@ -60,16 +59,15 @@ function updateCountdown() {
         clearInterval(countdownInterval);
     }
 
-    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    // Total hours remaining (no days – shows e.g. "46" not "01 day + 22 hrs")
+    const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
+    const minutes    = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds    = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
     // Update DOM
     const oldSecs = secondsEl.innerText;
-    
-    daysEl.innerText = formatTime(days);
-    hoursEl.innerText = formatTime(hours);
+
+    hoursEl.innerText   = totalHours;   // can be 2-3 digits, no zero-pad
     minutesEl.innerText = formatTime(minutes);
     secondsEl.innerText = formatTime(seconds);
 
