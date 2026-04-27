@@ -63,6 +63,14 @@ function createWindow() {
       const [w, h] = win.getSize(); 
       saveConfig({ width: w, height: h }); 
   });
+
+  win.on('close', (e) => {
+      if (!app.isQuitting) {
+          e.preventDefault();
+          win.hide();
+          if (tray) tray.setContextMenu(buildMenu());
+      }
+  });
 }
 
 // ── Tray ──────────────────────────────────────────────────────────────────────
