@@ -1,12 +1,56 @@
-// --- Target Date: April 27, 2026, 8:00 AM (Nepal Time) ---
-// Nepal is UTC+5:45. We'll convert target date to UTC first to be safe across browsers.
-// 2026-04-27 08:00:00 NPT = 2026-04-27 02:15:00 UTC
-const targetDate = new Date(Date.UTC(2026, 3, 27, 2, 15, 0)).getTime();
+// --- Exam Schedule Data ---
+// NPT is UTC+5:45
+// 8:00 AM NPT = 2:15 AM UTC
+// 11:00 AM NPT = 5:15 AM UTC
+const exams = [
+    { subject: "Compulsory English", date: "April 27, 2026", start: Date.UTC(2026, 3, 27, 2, 15, 0), end: Date.UTC(2026, 3, 27, 5, 15, 0), type: "core" },
+    { subject: "Compulsory Nepali", date: "April 28, 2026", start: Date.UTC(2026, 3, 28, 2, 15, 0), end: Date.UTC(2026, 3, 28, 5, 15, 0), type: "core" },
+    { subject: "Compulsory Mathematics", date: "April 30, 2026", start: Date.UTC(2026, 3, 30, 2, 15, 0), end: Date.UTC(2026, 3, 30, 5, 15, 0), type: "core" },
+    { subject: "Physics", date: "May 4, 2026", start: Date.UTC(2026, 4, 4, 2, 15, 0), end: Date.UTC(2026, 4, 4, 5, 15, 0), type: "core" },
+    { subject: "Chemistry", date: "May 6, 2026", start: Date.UTC(2026, 4, 6, 2, 15, 0), end: Date.UTC(2026, 4, 6, 5, 15, 0), type: "core" },
+    { subject: "Biology", date: "May 8, 2026", start: Date.UTC(2026, 4, 8, 2, 15, 0), end: Date.UTC(2026, 4, 8, 5, 15, 0), type: "biology" },
+    { subject: "Computer Science", date: "May 10, 2026", start: Date.UTC(2026, 4, 10, 2, 15, 0), end: Date.UTC(2026, 4, 10, 5, 15, 0), type: "computer" }
+];
 
-// Define a start date to calculate progress (e.g., beginning of academic year or a past date)
-// Let's use Jan 1, 2025 as an arbitrary start for the progress bar.
-const startDate = new Date(Date.UTC(2025, 0, 1, 0, 0, 0)).getTime();
-const totalDuration = targetDate - startDate;
+// Define a start date to calculate progress (Jan 1, 2026)
+const startDate = new Date(Date.UTC(2026, 0, 1, 0, 0, 0)).getTime();
+
+// Stream Management
+let currentStream = localStorage.getItem('selectedStream') || 'computer';
+
+function initStreamSelector() {
+    const btns = document.querySelectorAll('.stream-btn');
+    if (btns.length === 0) return;
+
+    btns.forEach(btn => {
+        if (btn.dataset.stream === currentStream) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+
+        btn.addEventListener('click', (e) => {
+            btns.forEach(b => b.classList.remove('active'));
+            e.currentTarget.classList.add('active');
+            currentStream = e.currentTarget.dataset.stream;
+            localStorage.setItem('selectedStream', currentStream);
+            updateCountdown();
+        });
+    });
+}
+
+function getActiveExam() {
+    const now = new Date().getTime();
+    const streamExams = exams.filter(e => e.type === 'core' || e.type === currentStream);
+    
+    for (let i = 0; i < streamExams.length; i++) {
+        const exam = streamExams[i];
+        if (now < exam.end) {
+            return exam;
+        }
+    }
+    return null; // All exams completed
+}
 
 // DOM Elements
 const hoursEl = document.getElementById('hours');
@@ -17,6 +61,8 @@ const progressPercent = document.getElementById('progress-percent');
 const rotatingText = document.getElementById('rotating-text');
 const countdownContainer = document.getElementById('countdown-container');
 const flickerOverlay = document.getElementById('flicker');
+const subjectNameEl = document.getElementById('subject-name');
+const examDateEl = document.getElementById('exam-date');
 
 // Subtexts for rotating
 const subtexts = [
@@ -28,10 +74,15 @@ const subtexts = [
     "Time is ticking. Make it count."
 ];
 let subtextIndex = 0;
+let isExamOngoing = false;
 
 // Update subtext
 function changeSubtext() {
-    if (!rotatingText) return;
+    if (!rotatingText || isExamOngoing) return;
+    
+    // Only update if not completed all exams
+    if (!getActiveExam()) return;
+
     rotatingText.classList.remove('fade-in');
     rotatingText.classList.add('fade-out');
     
@@ -52,16 +103,51 @@ const formatTime = (time) => (time < 10 ? `0${time}` : time);
 function updateCountdown() {
     if (!hoursEl) return;
     const now = new Date().getTime();
-    let timeRemaining = targetDate - now;
+    const activeExam = getActiveExam();
 
-    if (timeRemaining < 0) {
-        timeRemaining = 0;
-        // You could add special "EXAM STARTED" logic here
-        if (rotatingText) rotatingText.textContent = "It's Time! Good Luck! 🔥";
-        clearInterval(countdownInterval);
+    if (!activeExam) {
+        hoursEl.innerText = "00";
+        minutesEl.innerText = "00";
+        secondsEl.innerText = "00";
+        if (rotatingText) {
+            rotatingText.textContent = "All Exams Finished! 🎉";
+            rotatingText.classList.remove('fade-out');
+            rotatingText.classList.add('fade-in');
+        }
+        if (subjectNameEl) subjectNameEl.textContent = "Exams Completed";
+        if (progressBar) progressBar.style.width = `100%`;
+        if (progressPercent) progressPercent.innerText = `100.0000%`;
+        isExamOngoing = false;
+        return;
     }
 
-    // Total hours remaining (no days – shows e.g. "46" not "01 day + 22 hrs")
+    let targetTime;
+    
+    if (now >= activeExam.start && now < activeExam.end) {
+        // Exam is ongoing
+        targetTime = activeExam.end;
+        if (!isExamOngoing) {
+            isExamOngoing = true;
+            if (rotatingText) {
+                rotatingText.textContent = "🔥 EXAM ONGOING! 🔥";
+                rotatingText.classList.remove('fade-out');
+                rotatingText.classList.add('fade-in');
+            }
+        }
+        if (subjectNameEl) subjectNameEl.textContent = activeExam.subject + " (Ongoing)";
+    } else {
+        // Exam is upcoming
+        targetTime = activeExam.start;
+        isExamOngoing = false;
+        if (subjectNameEl) subjectNameEl.textContent = "Next: " + activeExam.subject;
+    }
+
+    if (examDateEl) examDateEl.textContent = activeExam.date;
+
+    let timeRemaining = targetTime - now;
+    if (timeRemaining < 0) timeRemaining = 0;
+
+    // Total hours remaining (no days)
     const totalHours = Math.floor(timeRemaining / (1000 * 60 * 60));
     const minutes    = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
     const seconds    = Math.floor((timeRemaining % (1000 * 60)) / 1000);
@@ -69,7 +155,7 @@ function updateCountdown() {
     // Update DOM
     const oldSecs = secondsEl.innerText;
 
-    hoursEl.innerText   = totalHours;   // can be 2-3 digits, no zero-pad
+    hoursEl.innerText   = totalHours;
     minutesEl.innerText = formatTime(minutes);
     secondsEl.innerText = formatTime(seconds);
 
@@ -80,8 +166,12 @@ function updateCountdown() {
         secondsEl.classList.add('tick');
     }
 
-    // Update Progress Bar
+    // Update Progress Bar based on total duration up to the LAST exam for the stream
     if (progressBar && progressPercent) {
+        const streamExams = exams.filter(e => e.type === 'core' || e.type === currentStream);
+        const lastExam = streamExams[streamExams.length - 1];
+        const totalDuration = lastExam.end - startDate;
+        
         const timeElapsed = now - startDate;
         let progress = (timeElapsed / totalDuration) * 100;
         if (progress > 100) progress = 100;
@@ -92,6 +182,8 @@ function updateCountdown() {
     }
 }
 
+// Initialize
+initStreamSelector();
 const countdownInterval = setInterval(updateCountdown, 1000);
 updateCountdown(); // Initial call
 
