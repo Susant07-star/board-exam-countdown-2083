@@ -224,9 +224,15 @@
             </div>
         </div>
 
-        <div class="stream-selector">
-            <button class="stream-btn active" data-stream="computer"><i class="fa-solid fa-laptop-code"></i> Computer</button>
-            <button class="stream-btn" data-stream="biology"><i class="fa-solid fa-microscope"></i> Biology</button>
+        <div class="stream-group">
+            <div class="main-streams">
+                <button class="stream-btn active" data-main="science"><i class="fa-solid fa-flask"></i> Science</button>
+                <button class="stream-btn" data-main="management"><i class="fa-solid fa-chart-pie"></i> Management</button>
+            </div>
+            <div class="sub-streams show" id="science-sub">
+                <button class="sub-stream-btn active" data-sub="science-computer"><i class="fa-solid fa-laptop-code"></i> Computer</button>
+                <button class="sub-stream-btn" data-sub="science-biology"><i class="fa-solid fa-microscope"></i> Biology</button>
+            </div>
         </div>
 
         <div class="action-row">

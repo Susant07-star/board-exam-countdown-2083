@@ -3,37 +3,76 @@
 // 8:00 AM NPT = 2:15 AM UTC
 // 11:00 AM NPT = 5:15 AM UTC
 const exams = [
-    { subject: "Compulsory English", date: "April 27, 2026", start: Date.UTC(2026, 3, 27, 2, 15, 0), end: Date.UTC(2026, 3, 27, 5, 15, 0), type: "core" },
-    { subject: "Compulsory Nepali", date: "April 28, 2026", start: Date.UTC(2026, 3, 28, 2, 15, 0), end: Date.UTC(2026, 3, 28, 5, 15, 0), type: "core" },
-    { subject: "Compulsory Mathematics", date: "April 30, 2026", start: Date.UTC(2026, 3, 30, 2, 15, 0), end: Date.UTC(2026, 3, 30, 5, 15, 0), type: "core" },
-    { subject: "Physics", date: "May 4, 2026", start: Date.UTC(2026, 4, 4, 2, 15, 0), end: Date.UTC(2026, 4, 4, 5, 15, 0), type: "core" },
-    { subject: "Chemistry", date: "May 6, 2026", start: Date.UTC(2026, 4, 6, 2, 15, 0), end: Date.UTC(2026, 4, 6, 5, 15, 0), type: "core" },
-    { subject: "Biology", date: "May 8, 2026", start: Date.UTC(2026, 4, 8, 2, 15, 0), end: Date.UTC(2026, 4, 8, 5, 15, 0), type: "biology" },
-    { subject: "Computer Science", date: "May 10, 2026", start: Date.UTC(2026, 4, 10, 2, 15, 0), end: Date.UTC(2026, 4, 10, 5, 15, 0), type: "computer" }
+    { subject: "Compulsory English", date: "April 27, 2026", start: Date.UTC(2026, 3, 27, 2, 15, 0), end: Date.UTC(2026, 3, 27, 5, 15, 0), streams: ["science-computer", "science-biology", "management"] },
+    { subject: "Compulsory Nepali", date: "April 28, 2026", start: Date.UTC(2026, 3, 28, 2, 15, 0), end: Date.UTC(2026, 3, 28, 5, 15, 0), streams: ["science-computer", "science-biology", "management"] },
+    { subject: "Compulsory Mathematics", date: "April 30, 2026", start: Date.UTC(2026, 3, 30, 2, 15, 0), end: Date.UTC(2026, 3, 30, 5, 15, 0), streams: ["science-computer", "science-biology"] },
+    { subject: "Social Studies & Life Skill", date: "April 30, 2026", start: Date.UTC(2026, 3, 30, 2, 15, 0), end: Date.UTC(2026, 3, 30, 5, 15, 0), streams: ["management"] },
+    { subject: "Accounting", date: "May 3, 2026", start: Date.UTC(2026, 4, 3, 2, 15, 0), end: Date.UTC(2026, 4, 3, 5, 15, 0), streams: ["management"] },
+    { subject: "Physics", date: "May 4, 2026", start: Date.UTC(2026, 4, 4, 2, 15, 0), end: Date.UTC(2026, 4, 4, 5, 15, 0), streams: ["science-computer", "science-biology"] },
+    { subject: "Economics", date: "May 5, 2026", start: Date.UTC(2026, 4, 5, 2, 15, 0), end: Date.UTC(2026, 4, 5, 5, 15, 0), streams: ["management"] },
+    { subject: "Chemistry", date: "May 6, 2026", start: Date.UTC(2026, 4, 6, 2, 15, 0), end: Date.UTC(2026, 4, 6, 5, 15, 0), streams: ["science-computer", "science-biology"] },
+    { subject: "Business Mathematics", date: "May 7, 2026", start: Date.UTC(2026, 4, 7, 2, 15, 0), end: Date.UTC(2026, 4, 7, 5, 15, 0), streams: ["management"] },
+    { subject: "Biology", date: "May 8, 2026", start: Date.UTC(2026, 4, 8, 2, 15, 0), end: Date.UTC(2026, 4, 8, 5, 15, 0), streams: ["science-biology"] },
+    { subject: "Business Studies", date: "May 8, 2026", start: Date.UTC(2026, 4, 8, 2, 15, 0), end: Date.UTC(2026, 4, 8, 5, 15, 0), streams: ["management"] },
+    { subject: "Computer Science", date: "May 10, 2026", start: Date.UTC(2026, 4, 10, 2, 15, 0), end: Date.UTC(2026, 4, 10, 5, 15, 0), streams: ["science-computer", "management"] }
 ];
 
 // Define a start date to calculate progress (Jan 1, 2026)
 const startDate = new Date(Date.UTC(2026, 0, 1, 0, 0, 0)).getTime();
 
 // Stream Management
-let currentStream = localStorage.getItem('selectedStream') || 'computer';
+let currentMainStream = localStorage.getItem('mainStream') || 'science';
+let currentSubStream = localStorage.getItem('subStream') || 'science-computer';
+
+function getActiveStreamFilter() {
+    return currentMainStream === 'science' ? currentSubStream : 'management';
+}
 
 function initStreamSelector() {
-    const btns = document.querySelectorAll('.stream-btn');
-    if (btns.length === 0) return;
+    const mainBtns = document.querySelectorAll('.stream-btn');
+    const subBtns = document.querySelectorAll('.sub-stream-btn');
+    const subStreamsContainer = document.getElementById('science-sub');
+    
+    if (mainBtns.length === 0) return;
 
-    btns.forEach(btn => {
-        if (btn.dataset.stream === currentStream) {
-            btn.classList.add('active');
-        } else {
-            btn.classList.remove('active');
-        }
+    // Apply saved state
+    mainBtns.forEach(btn => {
+        if (btn.dataset.main === currentMainStream) btn.classList.add('active');
+        else btn.classList.remove('active');
+    });
 
+    subBtns.forEach(btn => {
+        if (btn.dataset.sub === currentSubStream) btn.classList.add('active');
+        else btn.classList.remove('active');
+    });
+
+    if (currentMainStream === 'science') subStreamsContainer.classList.add('show');
+    else subStreamsContainer.classList.remove('show');
+
+    // Main stream click
+    mainBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            btns.forEach(b => b.classList.remove('active'));
+            mainBtns.forEach(b => b.classList.remove('active'));
             e.currentTarget.classList.add('active');
-            currentStream = e.currentTarget.dataset.stream;
-            localStorage.setItem('selectedStream', currentStream);
+            currentMainStream = e.currentTarget.dataset.main;
+            localStorage.setItem('mainStream', currentMainStream);
+            
+            if (currentMainStream === 'science') {
+                subStreamsContainer.classList.add('show');
+            } else {
+                subStreamsContainer.classList.remove('show');
+            }
+            updateCountdown();
+        });
+    });
+
+    // Sub stream click
+    subBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            subBtns.forEach(b => b.classList.remove('active'));
+            e.currentTarget.classList.add('active');
+            currentSubStream = e.currentTarget.dataset.sub;
+            localStorage.setItem('subStream', currentSubStream);
             updateCountdown();
         });
     });
@@ -41,7 +80,8 @@ function initStreamSelector() {
 
 function getActiveExam() {
     const now = new Date().getTime();
-    const streamExams = exams.filter(e => e.type === 'core' || e.type === currentStream);
+    const filter = getActiveStreamFilter();
+    const streamExams = exams.filter(e => e.streams.includes(filter));
     
     for (let i = 0; i < streamExams.length; i++) {
         const exam = streamExams[i];
@@ -168,7 +208,8 @@ function updateCountdown() {
 
     // Update Progress Bar based on total duration up to the LAST exam for the stream
     if (progressBar && progressPercent) {
-        const streamExams = exams.filter(e => e.type === 'core' || e.type === currentStream);
+        const filter = getActiveStreamFilter();
+        const streamExams = exams.filter(e => e.streams.includes(filter));
         const lastExam = streamExams[streamExams.length - 1];
         const totalDuration = lastExam.end - startDate;
         
